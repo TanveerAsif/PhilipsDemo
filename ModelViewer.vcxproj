@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4BB44E0D-0F93-4DFC-A3BF-8161E78B0BEF}</ProjectGuid>
+    <RootNamespace>ModelViewer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\Resources\Dependency\;.\Resources\Dependency\glew-2.1.0\include;.\Resources\Dependency\glfw\include;.\Resources\Dependency\glm;.\Resources\Dependency\libjpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Resources\Dependency\glew-2.1.0\lib\Release\x64;.\Resources\Dependency\glfw\lib-vc2017;.\Resources\Dependency\glfw\lib-vc2019;.\Resources\Dependency\assimp\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\Resources\Dependency\;.\Resources\Dependency\glew-2.1.0\include;.\Resources\Dependency\glfw\include;.\Resources\Dependency\glm;.\Resources\Dependency\libjpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Resources\Dependency\glew-2.1.0\lib\Release\x64;.\Resources\Dependency\glfw\lib-vc2017;.\Resources\Dependency\glfw\lib-vc2019;.\Resources\Dependency\assimp\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy ".\Resources\Dependency\assimp\bin64\assimp.dll" ".\$(Platform)\$(Configuration)\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\Resources\Dependency\;.\Resources\Dependency\glew-2.1.0\include;.\Resources\Dependency\glfw\include;.\Resources\Dependency\glm;.\Resources\Dependency\libjpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Resources\Dependency\glew-2.1.0\lib\Release\x64;.\Resources\Dependency\glfw\lib-vc2017;.\Resources\Dependency\glfw\lib-vc2019;.\Resources\Dependency\assimp\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GLEW_STATIC;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>.\Resources\Dependency\;.\Resources\Dependency\glew-2.1.0\include;.\Resources\Dependency\glfw\include;.\Resources\Dependency\glm;.\Resources\Dependency\libjpg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Resources\Dependency\glew-2.1.0\lib\Release\x64;.\Resources\Dependency\glfw\lib-vc2017;.\Resources\Dependency\glfw\lib-vc2019;.\Resources\Dependency\assimp\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;user32.lib;gdi32.lib;shell32.lib;glew32s.lib;assimp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>copy ".\Resources\Dependency\assimp\bin64\assimp.dll" ".\$(Platform)\$(Configuration)\"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Model.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp" />
+    <ClCompile Include="Resources\Dependency\libjpg\jaricom.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcapimin.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcapistd.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcarith.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jccoefct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jccolor.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcdctmgr.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jchuff.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcinit.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcmainct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcmarker.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcmaster.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcomapi.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcparam.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcprepct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jcsample.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jctrans.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdapimin.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdapistd.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdarith.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdatadst.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdatasrc.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdcoefct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdcolor.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jddctmgr.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdhuff.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdinput.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdmainct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdmarker.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdmaster.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdmerge.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdpostct.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdsample.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jdtrans.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jerror.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctflt.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctfst.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctint.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jidctflt.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jidctfst.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jidctint.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jmemmgr.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jmemnobs.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jquant1.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jquant2.c" />
+    <ClCompile Include="Resources\Dependency\libjpg\jutils.c" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="Texture.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="Model.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jconfig.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jdct.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jerror.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jinclude.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jmemsys.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jmorecfg.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jpegint.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jpeglib.h" />
+    <ClInclude Include="Resources\Dependency\libjpg\jversion.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="Texture.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModelViewer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Dependency\libjpg\coderules.txt" />
+    <Text Include="Resources\Dependency\libjpg\filelist.txt" />
+    <Text Include="Resources\Dependency\libjpg\install.txt" />
+    <Text Include="Resources\Dependency\libjpg\jconfig.txt" />
+    <Text Include="Resources\Dependency\libjpg\jdosaobj.txt" />
+    <Text Include="Resources\Dependency\libjpg\libjpeg.txt" />
+    <Text Include="Resources\Dependency\libjpg\structure.txt" />
+    <Text Include="Resources\Dependency\libjpg\usage.txt" />
+    <Text Include="Resources\Dependency\libjpg\wizard.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dependency\libjpg\jconfig.cfg" />
+    <None Include="Resources\Dependency\libjpg\libjpeg.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Dependency\libjpg\testimg.gif" />
+    <Image Include="Resources\Dependency\libjpg\testimg.jpg" />
+    <Image Include="Resources\Dependency\libjpg\testimgp.jpg" />
+    <Image Include="Resources\Dependency\libjpg\testorig.jpg" />
+    <Image Include="Resources\Dependency\libjpg\testprog.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

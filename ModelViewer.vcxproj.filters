@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="libJpeg">
+      <UniqueIdentifier>{da5e3c9e-6a8c-4de6-8d79-2fe6e94b0b64}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jaricom.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcapimin.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcapistd.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcarith.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jccoefct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jccolor.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcdctmgr.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jchuff.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcinit.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcmainct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcmarker.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcmaster.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcomapi.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcparam.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcprepct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jcsample.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jctrans.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdapimin.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdapistd.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdarith.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdatadst.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdatasrc.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdcoefct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdcolor.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jddctmgr.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdhuff.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdinput.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdmainct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdmarker.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdmaster.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdmerge.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdpostct.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdsample.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jdtrans.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jerror.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctflt.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctfst.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jfdctint.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jidctflt.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jidctfst.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jidctint.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jmemmgr.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jmemnobs.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jquant1.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jquant2.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="Resources\Dependency\libjpg\jutils.c">
+      <Filter>libJpeg</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jconfig.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jdct.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jerror.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jinclude.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jmemsys.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jmorecfg.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jpegint.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jpeglib.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="Resources\Dependency\libjpg\jversion.h">
+      <Filter>libJpeg</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ModelViewer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\Dependency\libjpg\coderules.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\filelist.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\install.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\jconfig.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\jdosaobj.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\libjpeg.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\structure.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\usage.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+    <Text Include="Resources\Dependency\libjpg\wizard.txt">
+      <Filter>libJpeg</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dependency\libjpg\jconfig.cfg">
+      <Filter>libJpeg</Filter>
+    </None>
+    <None Include="Resources\Dependency\libjpg\libjpeg.map">
+      <Filter>libJpeg</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Dependency\libjpg\testimg.gif">
+      <Filter>libJpeg</Filter>
+    </Image>
+    <Image Include="Resources\Dependency\libjpg\testimg.jpg">
+      <Filter>libJpeg</Filter>
+    </Image>
+    <Image Include="Resources\Dependency\libjpg\testimgp.jpg">
+      <Filter>libJpeg</Filter>
+    </Image>
+    <Image Include="Resources\Dependency\libjpg\testorig.jpg">
+      <Filter>libJpeg</Filter>
+    </Image>
+    <Image Include="Resources\Dependency\libjpg\testprog.jpg">
+      <Filter>libJpeg</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

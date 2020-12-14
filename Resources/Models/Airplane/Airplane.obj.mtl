@@ -1,0 +1,69 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.29665513)
+
+newmtl 11803_Airplane_body
+kd 1 1 1
+ka 1 1 1
+ks 0.54 0.54 0.54
+ke 0 0 0
+d 1
+Ns 204
+illum 2
+map_kd 11803_Airplane_body_diff.jpg
+map_ka 11803_Airplane_body_diff.jpg
+
+newmtl 11803_Airplane_wing_R
+kd 1 1 1
+ka 1 1 1
+ks 0.279 0.279 0.279
+ke 0 0 0
+d 1
+Ns 120
+illum 2
+map_kd 11803_Airplane_wing_big_R_diff.jpg
+map_ka 11803_Airplane_wing_big_R_diff.jpg
+
+newmtl 11803_Airplane_wing_details_R
+kd 1 1 1
+ka 1 1 1
+ks 0.279 0.279 0.279
+ke 0 0 0
+d 1
+Ns 120
+illum 2
+map_kd 11803_Airplane_wing_details_R_diff.jpg
+map_ka 11803_Airplane_wing_details_R_diff.jpg
+
+newmtl 11803_Airplane_tail
+kd 1 1 1
+ka 1 1 1
+ks 0.279 0.279 0.279
+ke 0 0 0
+d 1
+Ns 120
+illum 2
+map_kd 11803_Airplane_tail_diff.jpg
+map_ka 11803_Airplane_tail_diff.jpg
+
+newmtl 11803_Airplane_wing_details_L
+kd 1 1 1
+ka 1 1 1
+ks 0.279 0.279 0.279
+ke 0 0 0
+d 1
+Ns 120
+illum 2
+map_kd 11803_Airplane_wing_details_L_diff.jpg
+map_ka 11803_Airplane_wing_details_L_diff.jpg
+
+newmtl 11803_Airplane_wing_L
+kd 0.7843 0.7843 0.7843
+ka 0.7843 0.7843 0.7843
+ks 0.279 0.279 0.279
+ke 0 0 0
+d 1
+Ns 120
+illum 2
+map_kd 11803_Airplane_wing_big_L_diff.jpg
+map_ka 11803_Airplane_wing_big_L_diff.jpg
+
